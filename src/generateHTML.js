@@ -10,28 +10,61 @@ const headContent =
 </head>
 <body>
   <h1>Development Team</h1>
-  <section>`;
+  <section class="cards">`;
 const footContent = 
-`  </section>
+` </section>
 </body>
 </html>`;
 
 let teamContent = ``;
 
 function renderManager (person) {
-  let newContent = ``;
+  let newContent = 
+    `<div class="card manager">
+      <div class="card-head">
+        <h2>${person.name}</h2>
+        <h3>${person.role}</h3>
+      </div>
+      <div class="container">
+        <p>Employee ID: ${person.id}</p>
+        <p>Email: ${person.email}</p>
+        <p>Office Number: ${person.officeNumber}</p>
+      </div>
+   </div>`;
 
-  teamContent += newContent;
+   teamContent += newContent;
 }
 
 function renderIntern (person) {
-  let newContent = ``;
+  let newContent = 
+  `<div class="card intern">
+      <div class="card-head">
+        <h2>${person.name}</h2>
+        <h3>${person.role}</h3>
+      </div>
+      <div class="container">
+        <p>Employee ID: ${person.id}</p>
+        <p>Email: ${person.email}</p>
+        <p>Schoolr: ${person.school}</p>
+      </div>
+    </div>`;
 
   teamContent += newContent;
 }
 
 function renderEngineer (person) {
-  let newContent = ``;
+  let newContent = 
+  `<div class="card engineer">
+      <div class="card-head">
+        <h2>${person.name}</h2>
+        <h3>${person.role}</h3>
+      </div>
+      <div class="container">
+        <p>Employee ID: ${person.id}</p>
+        <p>Email: ${person.email}</p>
+        <p>GitHub Username: ${person.github}</p>
+      </div>
+    </div>`;
 
   teamContent += newContent;
 }
