@@ -27,7 +27,7 @@ function renderManager (person) {
       </div>
       <div class="container">
         <p>Employee ID: ${person.id}</p>
-        <p>Email: ${person.email}</p>
+        <p>Email: <a href="mailto:${person.email}">${person.email}</a></p>
         <p>Office Number: ${person.officeNumber}</p>
       </div>
    </div>`;
@@ -44,7 +44,7 @@ function renderIntern (person) {
       </div>
       <div class="container">
         <p>Employee ID: ${person.id}</p>
-        <p>Email: ${person.email}</p>
+        <p>Email: <a href="mailto:${person.email}">${person.email}</a></p>
         <p>School: ${person.school}</p>
       </div>
     </div>`;
@@ -61,8 +61,8 @@ function renderEngineer (person) {
       </div>
       <div class="container">
         <p>Employee ID: ${person.id}</p>
-        <p>Email: ${person.email}</p>
-        <p>GitHub Username: ${person.github}</p>
+        <p>Email: <a href="mailto:${person.email}">${person.email}</a></p>
+        <p>GitHub Username: <a target="__blank" href="https://github.com/${person.github}">${person.github}</a></p>
       </div>
     </div>`;
 
