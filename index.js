@@ -9,26 +9,10 @@ function newEngineer() {
   const newEng = new Engineer();
   inquirer.prompt(
     [
-      {
-        type: 'input',
-        name: 'name',
-        message: "Engineer's Name: "
-      },
-      {
-        type: 'input',
-        name: 'id',
-        message: "Engineer's ID: "
-      },
-      {
-        type: 'input',
-        name: 'email',
-        message: "Engineer's Email Address: "
-      },
-      {
-        type: 'input',
-        name: 'github',
-        message: "Engineer's GitHub User Name: "
-      },
+      newEng.getName(),
+      newEng.getID(),
+      newEng.getEmail(),
+      newEng.getGithub(),
       {
         type: 'list',
         name: 'nextMove',
@@ -57,26 +41,10 @@ function newIntern() {
   const newIntern = new Intern();
   inquirer.prompt(
     [
-      {
-        type: 'input',
-        name: 'name',
-        message: "Intern's Name: "
-      },
-      {
-        type: 'input',
-        name: 'id',
-        message: "Intern's ID: "
-      },
-      {
-        type: 'input',
-        name: 'email',
-        message: "Interns's Email Address: "
-      },
-      {
-        type: 'input',
-        name: 'school',
-        message: "Interns's School: "
-      },
+      newIntern.getName(),
+      newIntern.getID(),
+      newIntern.getEmail(),
+      newIntern.getSchool(),
       {
         type: 'list',
         name: 'nextMove',
