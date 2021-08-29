@@ -45,7 +45,7 @@ function renderIntern (person) {
       <div class="container">
         <p>Employee ID: ${person.id}</p>
         <p>Email: ${person.email}</p>
-        <p>Schoolr: ${person.school}</p>
+        <p>School: ${person.school}</p>
       </div>
     </div>`;
 
