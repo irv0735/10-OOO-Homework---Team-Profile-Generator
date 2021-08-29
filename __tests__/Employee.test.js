@@ -12,6 +12,4 @@ describe("Employee", () => {
     });
   });
 
-  describe()
-
 });

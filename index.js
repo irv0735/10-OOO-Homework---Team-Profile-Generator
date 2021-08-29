@@ -71,11 +71,9 @@ function newIntern() {
   })
 }
 
-
 function init () {
 
   const newManager = new Manager()
-
   inquirer.prompt(
     [
       newManager.getName(),
