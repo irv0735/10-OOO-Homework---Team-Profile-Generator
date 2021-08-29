@@ -32,8 +32,9 @@ function newEngineer() {
       newEngineer();
     } else if (answers.nextMove == 'Add Intern') {
       newIntern();
-    } 
+    } else if (answers.nextMove == 'Finished') {
     // block of code to pass the teamMembers to render/generate
+    }
   })
 }
 
@@ -64,8 +65,9 @@ function newIntern() {
       newEngineer();
     } else if (answers.nextMove == 'Add Intern') {
       newIntern();
-    } 
-    // block of code to pass the teamMembers to render/generate
+    } else if (answers.nextMove == 'Finished') {
+      // block of code to pass the teamMembers to render/generate
+    }
   })
 }
 
@@ -99,8 +101,9 @@ function init () {
       newEngineer();
     } else if (answers.nextMove == 'Add Intern') {
       newIntern();
-    } 
-    // block of code to pass the teamMembers to render/generate
+    } else if (answers.nextMove == 'Finished') {
+      // block of code to pass the teamMembers to render/generate
+    }
   });
  
 }
