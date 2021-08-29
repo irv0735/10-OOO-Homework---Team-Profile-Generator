@@ -11,6 +11,12 @@ describe("Engineer", () => {
       expect("role" in obj).toBe(true);
       expect("github" in obj).toBe(true);
     });
+
+    it("should set the role to Engineer", () => {
+      const obj = new Engineer();
+      obj.getRole();
+      expect(obj.role === "Engineer").toBe(true);
+    });
   });
 
 });

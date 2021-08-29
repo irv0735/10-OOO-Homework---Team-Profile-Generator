@@ -11,6 +11,13 @@ describe("Intern", () => {
       expect("role" in obj).toBe(true);
       expect("school" in obj).toBe(true);
     });
+
+    it("should set the role to Intern", () => {
+      const obj = new Intern();
+      obj.getRole();
+      expect(obj.role === "Intern").toBe(true);
+    });
+
   });
 
 });

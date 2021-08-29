@@ -11,5 +11,4 @@ describe("Employee", () => {
       expect("role" in obj).toBe(true);
     });
   });
-
 });

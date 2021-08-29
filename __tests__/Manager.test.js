@@ -11,6 +11,12 @@ describe("Manager", () => {
       expect("role" in obj).toBe(true);
       expect("officeNumber" in obj).toBe(true);
     });
+
+    it("should set the role to Manager", () => {
+      const obj = new Manager();
+      obj.getRole();
+      expect(obj.role === "Manager").toBe(true);
+    });
   });
 
 });
