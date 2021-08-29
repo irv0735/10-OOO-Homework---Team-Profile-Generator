@@ -49,7 +49,6 @@ function newEngineer() {
     } else if (answers.nextMove == 'Add Intern') {
       newIntern();
     } 
-    console.log(teamMembers)
     // block of code to pass the teamMembers to render/generate
   })
 }
@@ -98,7 +97,6 @@ function newIntern() {
     } else if (answers.nextMove == 'Add Intern') {
       newIntern();
     } 
-    console.log(teamMembers)
     // block of code to pass the teamMembers to render/generate
   })
 }
@@ -110,26 +108,10 @@ function init () {
 
   inquirer.prompt(
     [
-      {
-        type: 'input',
-        name: 'name',
-        message: "Manager's Name: "
-      },
-      {
-        type: 'input',
-        name: 'id',
-        message: "Managers's ID: "
-      },
-      {
-        type: 'input',
-        name: 'email',
-        message: "Manager's Email Address: "
-      },
-      {
-        type: 'number',
-        name: 'officeNumber',
-        message: "Manager's Office Number: "
-      },
+      newManager.getName(),
+      newManager.getID(),
+      newManager.getEmail(),
+      newManager.getOfficeNumber(),
       {
         type: 'list',
         name: 'nextMove',
@@ -150,7 +132,6 @@ function init () {
     } else if (answers.nextMove == 'Add Intern') {
       newIntern();
     } 
-    console.log(teamMembers)
     // block of code to pass the teamMembers to render/generate
   });
  
