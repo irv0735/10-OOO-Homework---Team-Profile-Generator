@@ -8,13 +8,8 @@ let teamMembers = [];
 
 function init () {
   const newEmployee = new Manager();
-  newEmployee.getName();
-  newEmployee.getID();
-  newEmployee.getEmail();
-  newEmployee.getOfficeNumber();
-  newEmployee.getRole();
   teamMembers.push(newEmployee);
-  console.log(teamMembers);
+  console.log(teamMembers)
 }
 
 init()
