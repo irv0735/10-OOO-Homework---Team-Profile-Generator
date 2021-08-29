@@ -4,5 +4,11 @@ const Engineer = require('./lib/engineer')
 const Intern = require('./lib/intern')
 
 
-const John = new Manager();
+function init () {
+  const newEmployee = new Manager();
+  let newName = newEmployee.getName();
+  let newID = newEmployee.getID();
+  let newEmail = newEmployee.getEmail();
+}
 
+init()
