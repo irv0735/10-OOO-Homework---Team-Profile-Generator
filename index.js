@@ -1,7 +1,11 @@
 const inquirer = require("inquirer")
+const fs = require('fs');
 const Manager = require('./lib/manager')
 const Engineer = require('./lib/engineer')
 const Intern = require('./lib/intern')
+const generate = require('./src/generateHTML')
+
+
 
 let teamMembers = [];
 
@@ -34,6 +38,10 @@ function newEngineer() {
       newIntern();
     } else if (answers.nextMove == 'Finished') {
     // block of code to pass the teamMembers to render/generate
+      htmlPageContent = generate.generateHTML(teamMembers);
+      fs.writeFile('./dist/team.html', htmlPageContent, (err) =>
+      err ? console.log(err) : console.log('Successfully created team.html!')
+      );
     }
   })
 }
@@ -67,6 +75,10 @@ function newIntern() {
       newIntern();
     } else if (answers.nextMove == 'Finished') {
       // block of code to pass the teamMembers to render/generate
+      htmlPageContent = generate.generateHTML(teamMembers);
+      fs.writeFile('./dist/team.html', htmlPageContent, (err) =>
+      err ? console.log(err) : console.log('Successfully created team.html!')
+      );
     }
   })
 }
@@ -101,9 +113,12 @@ function init () {
       newIntern();
     } else if (answers.nextMove == 'Finished') {
       // block of code to pass the teamMembers to render/generate
+      htmlPageContent = generate.generateHTML(teamMembers);
+      fs.writeFile('./dist/team.html', htmlPageContent, (err) =>
+      err ? console.log(err) : console.log('Successfully created team.html!')
+      );
     }
   });
- 
 }
 
 init()
