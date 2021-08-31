@@ -18,6 +18,10 @@
 
   ## Usage
   When launched with "node index.js" from the terminal, the user will be prompted to enter name, id, email and office number for the manager and then presented with an option to add an engineer or intern. The user can add as many engineers and interns as they would like until they select that they are finished. Once finished, an HTML page will be generated, presenting all of the information entered in a clean manner. The github profiles will be linked for the engineers and if any email addresses are clicked, the default mail application will load and populate the to line with the address.
+  [Video Demonstration](https://drive.google.com/file/d/1xVfQA1ZEnkVW9rMsCg4Cp2rQjUTzpeRF/view)
+
+  Example output file:
+  ![Team Profile Generator Screenshot](./src/Profile-Generator-Screenshot.png)
 
   ## Contributing
   No contributions at this time.
